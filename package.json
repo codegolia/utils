@@ -1,0 +1,43 @@
+{
+  "name": "@codegolia/utils",
+  "version": "0.1.0",
+  "description": "Utilities",
+  "main": "index.js",
+  "scripts": {
+    "predev": "npm run clean",
+    "dev": "nodemon src/playground.ts",
+    "test": "jest --detectOpenHandles",
+    "prebuild": "npm run test",
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "copy": "cp -r dist/* .",
+    "prepublishOnly": "npm run build && npm run copy && npm run clean",
+    "postpublish": "git clean -fd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codegolia/utils.git"
+  },
+  "keywords": [
+    "utils",
+    "utilities",
+    "functions"
+  ],
+  "author": "@codegolia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codegolia/utils/issues"
+  },
+  "homepage": "https://github.com/codegolia/utils#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "ts-jest": "^28.0.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

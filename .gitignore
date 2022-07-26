@@ -1,0 +1,18 @@
+# packages
+node_modules
+
+# compiled code
+dist
+build
+
+# envoirenment
+.env
+
+# testing
+**/playground.ts
+
+# log
+**/*.log
+
+# temp
+temp*

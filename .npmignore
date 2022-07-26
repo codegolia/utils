@@ -1,0 +1,23 @@
+# source
+/src
+
+# compiled code
+/dist
+/build
+
+# envoirenment
+.env
+
+# testing
+**/playground.ts
+/test
+jest.config.ts
+
+# typescript
+tsconfig.json
+
+# log
+**/*.log
+
+# temp
+temp*
