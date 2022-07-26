@@ -1,19 +1,19 @@
-# @codegolia/util
+# @codegolia/utils
 
 Utility functions for every project
 
 ## Installation
 
 ```bash
-npm i @codegolia/util
+npm i @codegolia/utils
 ```
 
 ## Usage
 
 ```typescript
-import { isNumber } from '@codegolia/util';
+import { isNumber } from '@codegolia/utils';
 // or
-import { isNumber } from '@codegolia/util/isNumber';
+import { isNumber } from '@codegolia/utils/isNumber';
 
 console.log(isNumber(123)); // true
 console.log(isNumber('123')); // false
@@ -183,7 +183,7 @@ console.log(isNumber('123')); // false
 - IsMinLength
 - IsEqualLength
 
-## Util
+## Utils
 
 - IsContains
 - IsDefined
