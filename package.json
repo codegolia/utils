@@ -8,7 +8,7 @@
     "dev": "nodemon src/playground.ts",
     "test": "jest --detectOpenHandles",
     "prebuild": "npm run test",
-    "build": "tsc",
+    "build": "npm run clean && tsc",
     "clean": "rm -rf dist",
     "copy": "cp -r dist/* .",
     "prepublishOnly": "npm run build && npm run copy && npm run clean",
